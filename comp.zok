@@ -1,0 +1,4 @@
+def main(private field _age, field _req) {
+    assert(_age >= _req);
+    return;
+}
