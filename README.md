@@ -16,7 +16,7 @@ In this lab, we will focus on the process of how a zk program was computed, prov
 
 For a better understanding, please view this figure first. (captured from [here](https://www.youtube.com/watch?v=sSlrywb5J_0&ab_channel=EthereumFoundation) at 10:10) 
 Blue texts are the commands used in ZoKrates CLI.
-![ZoKrates-CLI](https://github.com/ZhouYuxuan97/zk-demo/blob/main/ZoKrates%20-CLI.png)
+![ZoKrates-CLI](https://github.com/ZhouYuxuan97/zk-demo/blob/main/ZoKrates-CLI.png)
 
 
 ## Exercise 1. Setup and Hello-world
