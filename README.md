@@ -45,7 +45,7 @@ You should use a common .zok [file](https://github.com/ZhouYuxuan97/zk-demo/blob
 
 Using the given [verifier.sol](https://github.com/ZhouYuxuan97/zk-demo/blob/main/verifier.sol) smart contract to Remix IDE and put your proof arguments to `verifyTx` function. 
 
-Hints:
+Hint:
 1. You could use this command to download the files to avoid font/format issues, replace the link to adjust other files  
     ```bash
     >>> wget -O proving.key https://github.com/ZhouYuxuan97/zk-demo/blob/main/proving.key?raw=true
