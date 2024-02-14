@@ -1,7 +1,7 @@
 Lab X: Demo of Zero-knowledge Proofs(ZKPs) 
 ===
 
-## Introduction
+Introduction
 ---
 Zero-knowledge proofs (ZKPs) are a family of probabilistic protocols, first described by [Goldwasser, Micali and Rackoff](https://people.csail.mit.edu/silvio/Selected%20Scientific%20Papers/Proof%20Systems/The_Knowledge_Complexity_Of_Interactive_Proof_Systems.pdf) in 1985.
 
@@ -19,7 +19,7 @@ Blue texts are the commands used in ZoKrates CLI.
 ![ZoKrates-CLI](https://github.com/ZhouYuxuan97/zk-demo/blob/main/ZoKrates-CLI.png)
 
 
-## Exercise 1. Setup and Hello-world
+Exercise 1. Setup and Hello-world
 ---
 
 Follow the instructions in this [link](https://zokrates.github.io/gettingstarted.html), and install ZoKrates in MacOS or Linux by using `One-line installation` on the page. Then follow the instructions in 'Hello ZoKrates!' to execute the whole process. In each step, pay attention to which files are generated and match them to the above figure. After executing `zokrates export-verifier`, you will find a `verifier.sol` generated, deploy it to Remix IDE, and verify your proof in Remix.
@@ -36,7 +36,7 @@ Hints:
     ```
     
 
-## Exercise 2. Prove Your Age to Others
+Exercise 2. Prove Your Age to Others
 ---
 
 In this exercise, we simulate a scenario where you are a prover who tries to prove that your age is bigger than a given number(21, in this case). You will pass your proof to a smart contract deployed by a verifier, while your age is not included in the proof. 
@@ -51,7 +51,7 @@ Hints:
     >>> wget -O proving.key https://github.com/ZhouYuxuan97/zk-demo/blob/main/proving.key?raw=true
     ```
 
-## Exercise 3 (Additional). Prove Your Knowledge of a Hash Preimage 
+Exercise 3 (Additional). Prove Your Knowledge of a Hash Preimage 
 ---
 
 In this exercise, we simulate a scenario where Alice tries to prove she knows a hash preimage for a digest chosen by Bob. Samely, the preimage wouldn’t be revealed when Bob verifies the proof.
@@ -83,6 +83,7 @@ Help Bob to design `prove-preimage.zok` and follow these steps to finish the dem
     ```
  
 ## Deliverable
+
 ---
 1. You should create separate folders for all exercises. 
 2. Submission should be a pdf file.
