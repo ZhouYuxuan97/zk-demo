@@ -12,7 +12,7 @@ For more details on the background principles of ZPKs and zkSNARKs, please refer
 - [What are zk-SNARKs?](https://z.cash/learn/what-are-zk-snarks/)
 - [ZKP Science](https://zkp.science/)
 
-In this lab, we will focus on the process of how a zk program was computed, proved, and verified, showcasing the active involvement of multiple parties, with the help of  [ZoKrates](https://github.com/Zokrates/ZoKrates?tab=readme-ov-file). Please read the [deliverable](#deliverable) before your hands-on.
+In this lab, we will focus on the process of how a zk program was computed, proved, and verified, showcasing the active involvement of multiple parties, with the help of  [ZoKrates](https://github.com/Zokrates/ZoKrates?tab=readme-ov-file). **Please read the [deliverable](#deliverable) before your hands-on.**
 
 For a better understanding, please view this figure first. (captured from [here](https://www.youtube.com/watch?v=sSlrywb5J_0&ab_channel=EthereumFoundation) at 10:10) 
 Blue texts are the commands used in ZoKrates CLI.
