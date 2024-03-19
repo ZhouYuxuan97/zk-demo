@@ -25,25 +25,38 @@ Exercise 1. Setup and Hello-world
 Follow the instructions in this [link](https://zokrates.github.io/gettingstarted.html), and install ZoKrates in MacOS or Linux by using `One-line installation` on the page. Then follow the instructions in 'Hello ZoKrates!' to execute the whole process. In each step, pay attention to which files are generated and match them to the above figure. After executing `zokrates export-verifier`, you will find a `verifier.sol` generated, deploy it to Remix IDE, and verify your proof in Remix.
 
 Hints:
-1. Don' t forget add ZoKrates to PATH as suggested 
+1. Don't forget add ZoKrates to PATH as suggested 
     ```bash
     >>> export PATH=$PATH:/YOUR DIR/.zokrates/bin
     ```
-2. The input paraments to the verifier.verifyTx() should be like these(for example):
+2. You can find the a, b, c, and input values required for verifier.verifyTx() in generated `proof.json` file, the format should be like these(for example):
     ```python
     proof: [[a[0],a[1]], [[b[0][0],b[0][1]],[b[1][0],b[1][1]]], [c[0],c[1]]]
-    input: same as in input.json
     ```
     
 
 Exercise 2. Prove Your Age to Others
 ---
 
-In this exercise, we simulate a scenario where you are a prover who tries to prove that your age is bigger than a given number(21, in this case). You will pass your proof to a smart contract deployed by a verifier, while your age is not included in the proof. 
+In this exercise, we simulate a scenario where you are a prover who tries to prove that your age is bigger than a given number(21, in this case). You will submit your proof to a smart contract deployed by a verifier, while your age is not included in the proof. 
 
 You should use a common .zok [file](https://github.com/ZhouYuxuan97/zk-demo/blob/main/comp.zok) to compile, and use a given setup([proving.key](https://github.com/ZhouYuxuan97/zk-demo/blob/main/proving.key)) to replace the command of `zokrates setup`. 
 
 Using the given [verifier.sol](https://github.com/ZhouYuxuan97/zk-demo/blob/main/verifier.sol) smart contract to Remix IDE and put your proof arguments to `verifyTx` function. 
+
+
+Steps to finish the Exercise for your reference:
+- Compile the .zok program:
+```bash
+>>> zokrates compile -i comp.zok
+```
+- Perform the setup phase using the given `proving.key` file
+- Execute the program with specified arguments, the format of arguments can be referred to the definition in `comp.zok`
+- Generate a proof of computation:
+```bash
+>>> zokrates generate-proof
+```
+- Note: Stop at this step and proceed with the provided Solidity file for further instructions.
 
 Hint:
 1. You could use this command to download the files to avoid font/format issues, replace the link to adjust other files  
@@ -88,5 +101,5 @@ Help Bob to design `prove-preimage.zok` and follow these steps to finish the dem
 1. You should create separate folders for all exercises. 
 2. Submission should be a pdf file.
 3. For all exercises, you should submit the screenshots of what files remain in your folder; the screenshots of the terminal showing what commands are executed and their outputs; the screenshots of your contract executing inputs and results in Remix IDE.
-4.For all exercises, copy your code in `.zok` files and proofs in `proof.json` to the pdf submission.
-3. For Exercise 3, create two folders called `Alice` and `Bob` individually, follow the instructions and understand the scenario(difference in roles' duties), and submit the screenshots of what files remain in `Alice` and `Bob` folders.
+4. For all exercises, copy your code in `.zok` files and proofs in `proof.json` to the pdf submission.
+5. For Exercise 3, create two folders called `Alice` and `Bob` individually, follow the instructions and understand the scenario(difference in roles' duties), and submit the screenshots of what files remain in `Alice` and `Bob` folders.
